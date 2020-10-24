@@ -77,7 +77,6 @@ eb init -p python-3.6 django-tutorial --region us-east-1
 
 <div class="text-orange mb-2">
   PS: First delete the database from project settings. Delete this database
-  `
   DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
@@ -88,7 +87,7 @@ eb init -p python-3.6 django-tutorial --region us-east-1
         'PORT': '5432'
     }
 }
-  `
+
 </div>
 
 step: 12
@@ -101,13 +100,12 @@ eb create django-env
 
 step: 13
 
-```
 <div class="text-orange mb-2">
     Paste the envirnment URL in the Project settings' `Allow_HOST`
-  `
+
    ALLOWED_HOSTS = ['todo-deploy.eba-9nb6wjcm.us-east-1.elasticbeanstalk.com', 'localhost', '127.0.0.1' ]
-  `
+
 </div>
 
-```
+
 
