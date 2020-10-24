@@ -75,24 +75,25 @@ deactivate the project then inside the project-folder
 eb init -p python-3.6 django-tutorial --region us-east-1
 ```
 
-<div class="text-orange mb-2">
+```
   PS: First delete the database from project settings. Delete this database
   DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'article',
         'USER': 'postgres',
-        'PASSWORD': 'Joymaaloknath123',
+        'PASSWORD': '********',
         'HOST': 'database-2.ctrjrfmspj1h.us-east-1.rds.amazonaws.com',
         'PORT': '5432'
     }
 }
 
-</div>
+```
+
 
 step: 12
 
- Create  elasticbeans environment
+Create  elasticbeans environment
 ```
 eb create django-env
 
@@ -100,17 +101,12 @@ eb create django-env
 
 step: 13
 
-<div class="text-orange mb-2">
+
     Paste the envirnment URL in the Project settings' `Allow_HOST`
-
+```
    ALLOWED_HOSTS = ['todo-deploy.eba-9nb6wjcm.us-east-1.elasticbeanstalk.com', 'localhost', '127.0.0.1' ]
-
-</div>
-
+```
 
 
-<div style="color:red">
-  .text-orange on white
-</div>
 
 
