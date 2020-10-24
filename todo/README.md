@@ -109,7 +109,7 @@ step: 13
 
 
 
-<div class="text-orange mb-2">
+<div style="color:red">
   .text-orange on white
 </div>
 
