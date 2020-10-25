@@ -14,7 +14,7 @@ function App() {
 
     try {
       const response = await fetch(
-        " http://127.0.0.1:8000/api/article-lists/"
+        "http://todo-deploy.eba-9nb6wjcm.us-east-1.elasticbeanstalk.com/api"
       );
       const data = await response.json();
       console.log(data);
